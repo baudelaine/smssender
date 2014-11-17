@@ -6,9 +6,9 @@ if [ -z ${APP} ]; then
 	exit 1
 fi  
 
-cf set-env ${APP} TWILIO_ACCOUNT_SID "AC08530a72fd8fdea46400037545033240"
-cf set-env ${APP} TWILIO_AUTH_TOKEN "36bc9b67b776da53fd4e3ab119d9741f"
-cf set-env ${APP} TWILIO_PHONES "+18443346013"
+cf set-env ${APP} TWILIO_ACCOUNT_SID " "
+cf set-env ${APP} TWILIO_AUTH_TOKEN " "
+cf set-env ${APP} TWILIO_PHONES " "
 
 cf sp ${APP} && cf st ${APP}
 
