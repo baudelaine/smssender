@@ -1,0 +1,15 @@
+applications:
+- host: fr054721
+  disk: 1024M
+  name: fr054721
+  path: ./app/WebContent/
+  domain: mybluemix.net
+  mem: 512M
+  instances: 1
+  env:
+    TWILIO_ACCOUNT_SID: "<the 34 character Account identifier (starting with 'AC'). This can be found on your Twilio dashboard page.>"
+    TWILIO_AUTH_TOKEN: "<the 32 character AuthToken. This can be found on your Twilio dashboard page.>"
+    TWILIO_PHONES: "<sms-enabled number commas separated list. This can be found on your Twilio numbers page.>"
+  services:
+  - <App Name>-svc
+
