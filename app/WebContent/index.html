@@ -1,8 +1,9 @@
+
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-	<title>Sending SMS with IBM Bluemix</title>
+	<title>Sending SMS with WebSphere Liberty Profile under IBM Bluemix</title>
 	<link href="css/bootstrap.min.css" type="text/css" rel="stylesheet" />
 	<link href="css/bootstrap-theme.min.css" type="text/css" rel="stylesheet" />
 	<link href="css/mycss.css" type="text/css" rel="stylesheet" />
@@ -15,13 +16,18 @@
     	
 			<div class="page-header">
 				<div class="col-lg-2 col-sm-2 col-xs-2 col-12">
+					<img src="images/wlp.300x167.png" alt="..." class="img-thumbnail">
 					<img src="images/ibm.bluemix.jpg" alt="..." class="img-thumbnail">
 				</div>
 				<div class="col-lg-6 col-sm-6 col-xs-6 col-12 text-center">
-					<h1><strong>Sending SMS with IBM Bluemix</strong></h1>
+					<h1><strong>Sending SMS with <br> WebSphere Liberty Profile <br> under <br> IBM Bluemix</strong></h1>
 				</div>
 				<div class="col-lg-4 col-sm-4 col-xs-4 col-12 text-left img-responsive img-thumbnail background-iic">
 					<h3><small><a href="https://www-304.ibm.com/partnerworld/wps/servlet/ContentHandler/isv_inv_tsp_iic_paris_overview">Delivered by<br>Paris IBM Innovation Center</a></small></h3>
+				</div>
+				<div class="col-lg-4 col-sm-4 col-xs-4 col-12  text-right">
+					<br>
+					<button type="button" class="btn btn-danger btn-xs" onClick="reset()">Reset</button>
 				</div>
 			</div>    	
 
@@ -74,16 +80,17 @@
 				    <button type="button" class="btn btn-primary" onclick="SendSMS()"><span class="badge">3</span> Send</button>
 				</div>
 			</div>
-			<div class="col-lg-3 col-sm-3 col-xs-3 col-12 text-right">
-				<h4></h4>
+			<div class="col-lg-5 col-sm-5 col-xs-5 col-12">
+				<h4>Inauguration event</h4>
 				<div class="btn-group-horizontal">
-						  <button type="button" class="btn btn-danger btn-xs" onClick="reset()">Reset</button>
-
-					</div>
+					<button type="button" class="btn btn-primary" onclick="GetEventMessage()"><span class="badge">1</span> Load message</button>
+					<button type="button" class="btn btn-primary" onclick="GetEventContacts()"><span class="badge">2</span> Load contact(s)</button>
+				    <button type="button" class="btn btn-primary" onclick="SendSMS()"><span class="badge">3</span> Send</button>
+				</div>
 			</div>
 			
-			
 			<div class="col-lg-7 col-sm-7 col-xs-7 col-12">
+			<br>
 	 			<h4>Message</h4>
 				<div class="alert alert-warning alert-dismissible" role="alert">
 				  <button type="button" class="close" data-dismiss="alert"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
@@ -119,3 +126,4 @@
    	<script src="js/myfunctions.js"></script>
 </body>
 </html>
+
