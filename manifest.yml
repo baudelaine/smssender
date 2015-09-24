@@ -1,13 +1,13 @@
 applications:
-- host: smssender-telco
-  disk: 1024M
-  name: smssender-telco
+- host: smssender
+  disk: 512M
+  name: smssender
   path: ./app/WebContent/
-  domain: mybluemix.net
-  mem: 512M
+  domain: baudelaine.eu-gb.bluemix.net
+  mem: 256M
   instances: 1
   env:
-    TWILIO_ACCOUNT_SID: " "
-    TWILIO_AUTH_TOKEN: " "
-    TWILIO_PHONES: " "
+    TWILIO_ACCOUNT_SID: "AC08530a72fd8fdea46400037545033240"
+    TWILIO_AUTH_TOKEN: "36bc9b67b776da53fd4e3ab119d9741f"
+    TWILIO_PHONES: "+33 844-334-6013"
 
